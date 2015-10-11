@@ -1,0 +1,22 @@
+{
+  "name": "@oneflow/expressive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "example.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sekforde/expressive.git"
+  },
+  "author": "Nigel Watson <nigel.watson@oneflowcloud.com> (http://www.oneflowsystems.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sekforde/expressive/issues"
+  },
+  "homepage": "https://github.com/sekforde/expressive",
+  "dependencies": {
+    "natural": "^0.2.1"
+  }
+}

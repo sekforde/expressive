@@ -1,0 +1,26 @@
+<html>
+
+<head>
+	<script src="../lib/workqueue.js"></script>
+</head>
+
+<body>
+	<button onclick="translateText()">Translate</button>
+	<div>
+		<textarea id="text" style="width:45%;height:95%;float:left;font-family:courier;font-size:15pt">
+fetch a file from http://download.com/file called file1 and rotate pages from 5 to 10 and add a barcode type code128 at x 100 and y 100 with width 50 height 50 and then duplicate it 100 times and impose it using the template impositionTemplateId and upload it to http://upload.com/file and email it to nigelwatson@me.com
+		</textarea>
+		<textarea id="output" style="width:45%;height:95%;font-size:13px"></textarea>
+	</div>
+
+	<script>
+function translateText() {
+	var str = document.getElementById("text");
+	var workqueue = new Workqueue(str.value);
+	document.getElementById("output").value = JSON.stringify(workqueue.queue, null, 2);
+}
+	</script>
+
+</body>
+
+</html>
